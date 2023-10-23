@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styel1.css" />
+  <link rel="stylesheet" href="normalize.css">
+  <title>weather app##</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="content">
+      <h1>weather app</h1>
+      <form id="form">
+        <input type="text" id="input" placeholder="enter city" />
+        <input type="submit" value="get wheather" id="submit" />
+      </form>
+      
+      <!--  -->
+      <p class="message active">An error happened, please try again later</p>
+      <!--  -->
+
+      <div class="results active">
+        <div class="image">
+          <!-- <img src="http://openweathermap.org/img/wn/01.png" alt="Weather Icon"> -->
+        </div>
+       <div class="temperature">
+        <h2><span></span>°C</h1>
+          <p class="description" ></p>
+       </div>
+        <div class="boxes">
+          <div class="box ">
+            <p>Feels like: <span id="feels"></span></p>
+          </div>
+          <div class="box">
+            <p>Humidity: <span id="humitidy"></span>%</p>
+          </div>
+          <div class="box">
+            <p>Wind speed: <span id="speed"></span> W/s </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="main1.js"></script>
+</body>
+
+</html>
